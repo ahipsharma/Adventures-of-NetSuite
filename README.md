@@ -4,3 +4,13 @@
 
 ## Hola peeps!!! Struggling with NetSuite??? Search here might find a solution for your query
 
+
+
+### Getting Script paramters
+
+Import - 'N/runtime'module
+
+var myScript = runtime.getCurrentScript();
+var scriptParameterValue = myScript.getParameter({
+    name: 'INERNAL_ID_OF_THE_PARAMETER_PASSED'
+});
